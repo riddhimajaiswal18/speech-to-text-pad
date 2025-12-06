@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text Pad</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+<header>
+  <h1 class="title">
+   <i class="fa-solid fa-microphone"></i>
+    Speech-to-Text Studio
+   </h1>
+   <h3 class="sub-title">Your Personal voice typing workspace</h3>
+</header> 
+
+<main>
+
+  <div class="speech">
+
+   <!--add divs maybe  -->
+  <div class="status-bar">Idle~</div>
+
+  <div class="instruction-buttons">
+    <div class="start">
+       <i class="fa-solid fa-play"></i> 
+       Play
+    </div>
+    <div class="stop">
+       <i class="fa-solid fa-stop"></i>
+       Stop
+    </div>
+    <div class="clear">
+       <i class="fa-solid fa-trash"></i>
+       Clear
+    </div>
+    <div class="save">
+       <i class="fa-solid fa-floppy-disk"></i>
+       Save
+    </div>
+  </div>
+
+  </div>
+
+
+  <div class="transcription">
+    <p>
+    <i class="fa-solid fa-pen"></i>
+      Live Transcription Panel
+    </p>
+    <div class="text">
+      <div class="interim"></div>
+      <div class="final"></div>
+    </div>
+  </div>
+
+
+  <div class="notes-drawer">
+    <h2>Notes Drawer</h2>
+    <div class="noteslist"></div>
+
+  </div>
+
+
+  <!-- <footer>
+  <p> Made with <span style="color: red;"> 
+  <i class="fa-solid fa-heart"></i> </span> and 
+  <span style="color: grey;"> <i class="fa-solid fa-code"></i> </span> 
+  by Riddhima Jaiswal </p>
+  <p> <i class="fa-regular fa-copyright"></i> 
+  2025 Riddhima Jaiswal.All rights reserved.</p>
+</footer> -->
+
+
+</main>
+
+<script src="script.js">
+</script>
+</body>
+</html>

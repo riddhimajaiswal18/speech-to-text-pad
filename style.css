@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header: black;
+    --headerText:white;
+    --body:#7D8CA3;
+    --transcription:#36311F;
+    --notes:#59544B; 
+    --transcriptionText:#465362;
+    --speech:#5C6F68;
+}
+
+body{
+    background-color: var(--body);
+}
+
+header{
+    background-color: var(--header);
+    color: var(--headerText);
+    height:100px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 70%; 
+}
+
+.speech{
+    background-color: var(--speech);
+    border:black 25px bold;
+    height: 400px;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.instruction-buttons{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+
+.instruction-buttons > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: #e8e8e8;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-right: 10px;
+}
+
+.instruction-buttons .start:hover {
+  background: #2ecc71;      
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.5);
+}
+
+.instruction-buttons .stop:hover {
+  background: #e74c3c;      
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.5);
+}
+
+.instruction-buttons .clear:hover {
+  background: #f1c40f;      
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(241, 196, 15, 0.5);
+}
+
+.instruction-buttons .save:hover {
+  background: #3498db;     
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.5);
+}
+
+.transcription{
+    background-color: var(--transcription);
+    border:black 25px bold;
+    height: 400px;
+    font-size: 30px;
+}
+
+.text{
+    color: var(--transcriptionText);
+    height: 350px;
+    background: #2c2a1a;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.interim{
+    color: #000;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.final{
+    overflow-y: auto; 
+    background-color:black;
+    color:white;
+    margin-left:8px;
+    margin-right:8px;
+    padding: 5px;
+}
+
+.note {
+  background: #8aa39b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  color: #000;
+  height: 120px;
+  width: 120px;
+  /*overflow-y: auto;  */
+}
+
+
+
+
+
+
