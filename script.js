@@ -48,14 +48,12 @@ saveBtn.addEventListener('click',function(){
   console.log("trying to save");
   
    let saveContent=textFinal.textContent;
-   setNotes(saveContent) //
-    //render notes to add to ui
+   setNotes(saveContent) 
     addNotesToUI()
    statusBar.textContent="Saved Successfully!"
    textFinal.textContent=''
    textInterim.textContent='' 
 })
-
 
 
 function getNotes() {
@@ -74,7 +72,7 @@ function setNotes(notes) {
     text: notes,             
     created: Date.now()        
   }
-  savedNotes.push(objNotes) //
+  savedNotes.push(objNotes) 
   localStorage.setItem('savedNotes', JSON.stringify(savedNotes))
 }
 
@@ -122,5 +120,3 @@ function addNotesToUI() {
 }
 
 addNotesToUI();
-
-//left add notes to UI n check local storage
